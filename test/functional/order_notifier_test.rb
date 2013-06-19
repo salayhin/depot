@@ -17,5 +17,4 @@ class OrderNotifierTest < ActionMailer::TestCase
                  mail.body.encoded
   end
 
-
 end
