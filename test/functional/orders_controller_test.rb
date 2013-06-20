@@ -15,6 +15,9 @@ class OrdersControllerTest < ActionController::TestCase
     cart = Cart.create
     session[:cart_id] = cart.id
     LineItem.create(cart: cart, product: products(:ruby))
+    #item = LineItem.create
+    #item.cart = cart
+    #item.product = products(:ruby)
     get :new
     assert_response :success
   end
